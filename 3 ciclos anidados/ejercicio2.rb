@@ -24,3 +24,15 @@ Generar el código para imprimir la siguiente tabla:
   <tbody>
  </table>
 =end
+
+shtml = ''
+cont  = 0
+for i in 1..3
+  valor = ''
+  4.times do |a|
+    cont += 1     
+    valor += "\t\t\t<td> #{cont} </td>\n"
+  end
+  shtml = "#{shtml}\n\t\t<tr>\n#{valor}\t\t</tr>"
+end
+puts "<table>\n\t<tbody>#{shtml}\n\t</tbody>\n</table>"

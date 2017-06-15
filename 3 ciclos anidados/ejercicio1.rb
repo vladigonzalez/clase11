@@ -6,8 +6,10 @@ Se pide imprimir la secuencia numérica, de la siguiente forma:
 4   8   12   16
 =end
 
-i=0
-16.times do
-	i =i+1
-	puts i	
+for i in 1..4
+	ln = ''
+	for a in 1..4
+    	ln =+ "#{ln}\t#{i*a}"
+	end	
+	puts ln
 end

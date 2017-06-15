@@ -12,6 +12,11 @@ elsif a == true
   		puts 'No lograste A ni B!'
 	end
 
+#optimizado
+puts 'Lograste A y B!'  if a && b
+puts 'Lograste A y pero no B!'  if a && !b
+puts 'No Lograste A ni B!'  if !a && !b
+
 ############################
 ##if a == true
 ##  if b == true
